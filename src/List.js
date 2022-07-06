@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ActionBar from 'react-native-action-bar';
 import { Text, View, Image, TouchableNativeFeedback, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
-import Details from './Details';
 
 class List extends Component {
     state = {
@@ -10,7 +9,7 @@ class List extends Component {
     }
 
     componentDidMount = () => {
-        fetch('https://private-anon-ecd349e061-githubtrendingapi.apiary-mock.com/repositories', {
+        fetch('https://private-anon-04b9042c5a-githubtrendingapi.apiary-mock.com/repositories', {
             method: 'GET'
         })
             .then((response) => response.json())
@@ -67,7 +66,7 @@ class List extends Component {
                                             {item.name}
                                         </Text>
                                     </View>
-                                    <TouchableOpacity
+                                    <TouchableOpacity style={styles.submitContainer}
                                         onPress={() => this.props.navigation.navigate('Details', { details: item })}>
                                         <Text style={styles.moreBtn}>
                                             More
@@ -129,12 +128,12 @@ const styles = StyleSheet.create({
         marginStart: 16
     },
     author: {
-        fontFamily: 'roboto_regular',
+        fontFamily: 'Roboto-Regular',
         fontSize: 12,
         color: '#52575C'
     },
     name: {
-        fontFamily: 'roboto_medium',
+        fontFamily: 'Roboto-Medium',
         fontSize: 15,
         color: '#52575C'
     },
@@ -171,12 +170,17 @@ const styles = StyleSheet.create({
         marginStart: 16
     },
     moreBtn: {
+        color: '#ffffff',
+        textAlign: 'center',
+        textAlignVertical: 'center'
+    },
+    submitContainer:{
+        flexDirection:'row',
         width: 60,
         height: 30,
         backgroundColor: '#000000',
-        color: '#ffffff',
         borderRadius: 4,
-        textAlign: 'center',
-        textAlignVertical: 'center'
+        alignItems:'center',
+        justifyContent:'center',
     }
 })

@@ -12,6 +12,8 @@ target 'PlayGround' do
     :hermes_enabled => false
   )
 
+  pod 'RNCMaskedView', :path => '../node_modules/@react-native-masked-view/masked-view'
+
   target 'PlayGroundTests' do
     inherit! :complete
     # Pods for testing

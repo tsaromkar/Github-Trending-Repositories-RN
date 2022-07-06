@@ -56,12 +56,12 @@ const styles = StyleSheet.create({
         marginStart: 16
     },
     author: {
-        fontFamily: 'roboto_regular',
+        fontFamily: 'Roboto-Regular',
         fontSize: 12,
         color: '#52575C'
     },
     name: {
-        fontFamily: 'roboto_medium',
+        fontFamily: 'Roboto-Medium',
         fontSize: 15,
         color: '#52575C'
     },

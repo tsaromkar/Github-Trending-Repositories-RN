@@ -53,9 +53,9 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>roboto_bold_italic.ttf</string>
-		<string>roboto_medium.ttf</string>
-		<string>roboto_regular.ttf</string>
+		<string>Roboto-Bold-Italic.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
